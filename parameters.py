@@ -3,8 +3,8 @@ import bfapi
 app_key = 'JtmgDi0ygQqGoLU8'
 TIME_FORMAT = '%Y-%m-%dT%H:%M:%S.%fZ'
 REQ_PREFIX = '{"jsonrpc": "2.0", "method": "SportsAPING/v1.0/'
-username = 'ccbeauchamp' 
-password = 'Aerodynamic224'
+username = 'xxxx' 
+password = 'xxxx'
 
 horse_keys = ['date', 'country', 'track', 'going', 'type', 'distance', 'class', 'time', 'stall', 'name', 'or', 'age', 'pace', 'weight', 'jockey', 'trainer', 'head gear', 'sp fav', 'industry sp', 'betfair sp', 'ip min', 'ip max', 'pre min', 'pre max', 'pred industry sp', 'place', 'winning distance', 'runners', 'sp win return', 'e/w return', 'bf win return']
 
