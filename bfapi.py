@@ -20,7 +20,7 @@ class BetfairExchange(object):
         self.login_info = login_info
         self.token = login(self.login_info)
         self.header = {
-            'X-Application': parameters.app_key,
+            'X-Application': parameters.APP_KEY,
             'X-Authentication': self.token,
             'content-type': 'application/json'
         }
@@ -65,7 +65,7 @@ class BetfairExchange(object):
 def login(login_info):
     header = {
         'Accept': 'application/json',
-        'X-Application': parameters.app_key,
+        'X-Application': parameters.APP_KEY,
     }
     session = requests.Session()
     response = session.post(url='https://identitysso.betfair.com/api/login', headers=header, data=login_info, verify=False)
@@ -119,7 +119,7 @@ def get_current_time():
 
 
 if __name__ == '__main__':
-    login_info = get_login_info(parameters.username, parameters.password)
+    login_info = get_login_info(parameters.USERNAME, parameters.PASSWORD)
     bf = BetfairExchange(login_info)
     json = parameters.list_market_catalogue_json()
     market_catalogue = bf.send_json_request(json)
